@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <style>
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      /* point this to the correct path for your image */
+      background-image: url('./mars.jpg');
+      background-size: cover;            /* fill screen */
+      background-position: center center;/* keep subject centered */
+      background-repeat: no-repeat;
+      background-attachment: fixed;      /* nice, subtle parallax on scroll */
+      color: #e8eefc;                    /* readable text on Mars */
+    }
+
+    /* optional: add a soft backdrop behind headings for contrast */
+    #heading {
+      position: relative;
+      padding: 16px 24px;
+      backdrop-filter: blur(3px);
+      background: rgba(0,0,0,0.25);
+      border-radius: 12px;
+      margin: 12px;
+      display: inline-block;
+    }
+    #heading .border {
+      height: 2px; width: 100%;
+      background: #ffffff;
+      opacity: .7;
+      margin-top: 8px;
+    }
+  </style>
+  <style>
+  .splash{
+    position:fixed; inset:0; display:grid; place-items:center;
+    background: rgba(0,0,0,0.45); backdrop-filter: blur(3px);
+    z-index:9999; transition: opacity .6s ease;
+  }
+  .splash__card{
+    padding:20px 24px; border:1px solid rgba(255,255,255,.35);
+    border-radius:12px; background: rgba(0,0,0,0.35); color:#e8eefc;
+    min-width:280px; max-width:420px; text-align:center;
+  }
+  .splash__sub{ opacity:.9; font-size:14px; margin-top:6px; }
+  .splash__bar{
+    height:8px; border-radius:999px; background: rgba(255,255,255,.18);
+    overflow:hidden; margin-top:14px;
+  }
+  .splash__fill{
+    height:100%; width:0%;
+    background: linear-gradient(90deg, #8fb3ff, #ffffff);
+    animation: fill 5s linear forwards;
+  }
+  @keyframes fill { to { width:100%; } }
+  .splash--hide{ opacity:0; pointer-events:none; }
+</style>
+
+</head>
+		<meta charset="utf-8">
+		<title>SpaceX Falcon 9</title>
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+	</head>
+	<body>
+    <div id="heading">
+      <h1>The SpaceX Headquarters (Mars)</h1>
+      <div class="border"></div>
+    </div>
+    <div id="progress-container">
+      <div id="progress">Initiating Launch...</div>
+    </div>
+    <div id="splash" class="splash">
+  <div class="splash__card">
+    <h1>Preparing Launch…</h1>
+    <div class="splash__sub">Initializing Falcon 9 & Starlink Infographic</div>
+    <div class="splash__bar"><div class="splash__fill"></div></div>
+  </div>
+</div>
+
+		<script type="module" src="./main.js"></script>
+	</body>
+</html>
