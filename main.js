@@ -193,7 +193,7 @@ function createMetricsUI() {
     background: rgba(0,0,0,.35); backdrop-filter: blur(3px);
     padding: 6px 8px; border-radius: 10px;
     transition: box-shadow .15s ease, border-color .15s ease;
-    transform: scale(.72);                 /* shrink group */
+    transform: scale(.52);                 /* shrink group */
     transform-origin: top right;
   `;
   function makeSliderGroup({labelText, id}) {
@@ -948,6 +948,7 @@ new ResizeObserver(sizeStarlinkToContainer).observe(starlinkWrap);
   starControls.update();
   starRenderer.render(starScene, starCamera);
 })();
+
 
 
 
