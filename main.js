@@ -183,7 +183,7 @@ function createMetricsUI() {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
-    transform: translateY(-50px);     /* move both sliders up */
+    transform: translateY(-30px);     /* move both sliders up */
   `;
 
   // one slider group factory (horizontal)
@@ -948,6 +948,7 @@ new ResizeObserver(sizeStarlinkToContainer).observe(starlinkWrap);
   starControls.update();
   starRenderer.render(starScene, starCamera);
 })();
+
 
 
 
