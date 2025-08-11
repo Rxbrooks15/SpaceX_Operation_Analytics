@@ -183,7 +183,7 @@ function createMetricsUI() {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
-    transform: translateY(45px);     /* move both sliders up */
+    transform: translateY(35px);     /* move both sliders up */
   `;
 
   // one slider group factory (horizontal)
@@ -193,7 +193,7 @@ function createMetricsUI() {
     background: rgba(0,0,0,.35); backdrop-filter: blur(3px);
     padding: 6px 8px; border-radius: 10px;
     transition: box-shadow .15s ease, border-color .15s ease;
-    transform: scale(.62);                 /* shrink group */
+    transform: scale(.71);                 /* shrink group */
     transform-origin: top right;
   `;
   function makeSliderGroup({labelText, id}) {
@@ -948,6 +948,7 @@ new ResizeObserver(sizeStarlinkToContainer).observe(starlinkWrap);
   starControls.update();
   starRenderer.render(starScene, starCamera);
 })();
+
 
 
 
