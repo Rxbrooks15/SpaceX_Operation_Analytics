@@ -71,7 +71,10 @@ Because \(\psi\) is kinematically linked to \(\theta\) via the rigid-foldability
 - **Single actuation:** 1-DOF deployment of the entire sheet
 - **Even stress distribution:** suitable for thin, fragile substrates
 - **Predictable deployment path:** reduced risk of buckling or inversion with pre-creased hinges
-
+sin(θ/2)
+sin(ψ/2)
+​
+ =cos(ϕ)
 ---
 
 ### 5. Applications
