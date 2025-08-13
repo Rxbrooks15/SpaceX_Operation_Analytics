@@ -17,160 +17,66 @@ Proposed Satellite Design
 
 <img width="1150" height="807" alt="Screenshot (462)" src="https://github.com/user-attachments/assets/2eaa8ddc-0d04-490b-aa27-ae1332eb9eb4" />
 
-2.1 Crease Pattern
-Each cell has four creases:
+## Miura-ori: Technical Details
 
-Two mountain folds (same orientation)
+### 2.1 Crease Pattern
+Each unit cell has **four creases**:
+- Two **mountain** folds (same orientation)
+- Two **valley** folds (opposite orientation)
 
-Two valley folds (opposite orientation)
+They alternate in a zig-zag arrangement so that actuating one crease drives the rest. The tessellation of identical parallelogram cells yields a sheet with a single degree of freedom (1-DOF) during folding.
 
-They alternate in a zig-zag arrangement so that when you fold one, the others follow automatically.
+---
 
-2.2 Mathematical Folding Kinematics
-We define:
+### 2.2 Mathematical Folding Kinematics
 
-𝜃
-θ = fold angle of the primary creases (0° = flat, ±180° = fully folded)
+**Definitions**
+- \(\theta\): fold angle of the primary creases ( \(0^\circ\) = flat, \(\pm 180^\circ\) = fully folded)
+- \(\psi\): fold angle of the secondary creases
+- \(\phi\): acute angle of the base parallelogram (constant)
 
-𝜓
-ψ = auxiliary fold angle of secondary creases
+**Key rigid-foldability constraint**
 
-𝜙
-ϕ = base parallelogram acute angle (constant)
+\[
+\frac{\sin\left(\psi/2\right)}{\sin\left(\theta/2\right)} \;=\; \cos\phi
+\]
 
-Key property:
-The Miura-ori is rigid-foldable, so 
-𝜃
-θ and 
-𝜓
-ψ are not independent — they satisfy a trigonometric constraint:
+This relation comes from spherical trigonometry applied to the four-crease vertex, ensuring the pattern rigid-folds with panels treated as rigid facets connected by ideal hinges.
 
-sin
-⁡
-(
-𝜓
-/
-2
-)
-sin
-⁡
-(
-𝜃
-/
-2
-)
-=
-cos
-⁡
-(
-𝜙
-)
-sin(θ/2)
-sin(ψ/2)
-​
- =cos(ϕ)
-This comes from spherical trigonometry applied to the hinge network.
+---
 
-3. Compression Ratio
-When folded, the planar projection of the sheet shrinks.
-For a sheet with 
-𝑚
-m by 
-𝑛
-n units:
+### 3. Compression Ratio
 
-Original dimensions:
+For a sheet composed of \(m \times n\) identical parallelogram units with side lengths \(a\) (along \(x\)) and \(b\) (along \(y\)):
 
-𝐿
-0
-=
-𝑚
-⋅
-𝑎
-,
-𝑊
-0
-=
-𝑛
-⋅
-𝑏
-sin
-⁡
-(
-𝜙
-)
-L 
-0
-​
- =m⋅a,W 
-0
-​
- =n⋅bsin(ϕ)
-Folded dimensions:
+**Original (flat) projected dimensions**
+\[
+L_0 = m\,a, \qquad
+W_0 = n\,b\,\sin\phi
+\]
 
-𝐿
-(
-𝜃
-)
-=
-𝑚
-⋅
-𝑎
-cos
-⁡
-(
-𝜃
-/
-2
-)
-L(θ)=m⋅acos(θ/2)
-𝑊
-(
-𝜃
-)
-=
-𝑛
-⋅
-𝑏
-sin
-⁡
-(
-𝜙
-)
-cos
-⁡
-(
-𝜓
-/
-2
-)
-W(θ)=n⋅bsin(ϕ)cos(ψ/2)
-Because 
-𝜓
-ψ is linked to 
-𝜃
-θ, both 
-𝐿
-L and 
-𝑊
-W decrease simultaneously — a rare property for folding surfaces.
+**Folded projected dimensions (at fold state \(\theta\))**
+\[
+L(\theta) = m\,a\,\cos\!\left(\tfrac{\theta}{2}\right),
+\qquad
+W(\theta) = n\,b\,\sin\phi \,\cos\!\left(\tfrac{\psi}{2}\right)
+\]
 
-4. Engineering Advantages
-Compact stowage — extremely high area-to-volume compression ratio
+Because \(\psi\) is kinematically linked to \(\theta\) via the rigid-foldability constraint, **both** \(L\) and \(W\) contract simultaneously—a distinctive property of Miura-ori.
 
-Single actuation — one motor or one pull motion can deploy the entire sheet
+---
 
-Even stress distribution — good for thin fragile materials (e.g., solar panels, maps)
+### 4. Engineering Advantages
+- **Compact stowage:** high area-to-volume compression
+- **Single actuation:** 1-DOF deployment of the entire sheet
+- **Even stress distribution:** suitable for thin, fragile substrates
+- **Predictable deployment path:** reduced risk of buckling or inversion with pre-creased hinges
 
-Predictable deployment path — no buckling or accidental inversion if creases are pre-scored
+---
 
-5. Applications
-Spacecraft solar panels (NASA/JAXA)
-
-Foldable architecture & shelters
-
-Deployable antennas
-
-Compact maps
-
-Energy-absorbing panels (in mechanical metamaterials)
+### 5. Applications
+- Spacecraft solar arrays (e.g.,SpaceX, NASA/JAXA)
+- Foldable architecture and deployable shelters
+- Deployable antennas
+- Compact maps
+- Energy-absorbing/metamaterial panels
