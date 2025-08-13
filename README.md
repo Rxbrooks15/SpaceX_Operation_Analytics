@@ -16,8 +16,9 @@ Proposed Satellite Design
 ![Starlink (1)](https://github.com/user-attachments/assets/fcd5c0c2-fb10-493c-b439-e2abb70f4bab)
 
 <img width="1150" height="807" alt="Screenshot (462)" src="https://github.com/user-attachments/assets/2eaa8ddc-0d04-490b-aa27-ae1332eb9eb4" />
-![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
 
+When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 ## Miura-ori: Technical Details
 
