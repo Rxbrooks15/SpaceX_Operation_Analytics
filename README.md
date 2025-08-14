@@ -11,6 +11,10 @@ Pseudo Canva Presentation
 
 <img width="976" height="530" alt="Screenshot (460)" src="https://github.com/user-attachments/assets/cdca41de-6cc1-46b6-85e9-b9d854f97562" />
 
+
+https://github.com/user-attachments/assets/69c63660-09b8-43a0-a83e-c40d78bc732f
+
+
 Proposed Satellite Design 
 
 ![Starlink (1)](https://github.com/user-attachments/assets/fcd5c0c2-fb10-493c-b439-e2abb70f4bab)
