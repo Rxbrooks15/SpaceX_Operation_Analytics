@@ -17,8 +17,6 @@ Proposed Satellite Design
 
 <img width="1150" height="807" alt="Screenshot (462)" src="https://github.com/user-attachments/assets/2eaa8ddc-0d04-490b-aa27-ae1332eb9eb4" />
 
-
-
 ## Miura-ori: Technical Details
 
 ### 2.1 Crease Pattern
@@ -29,26 +27,22 @@ Each unit cell has **four creases**:
 They alternate in a zig-zag arrangement so that actuating one crease drives the rest. The tessellation of identical parallelogram cells yields a sheet with a single degree of freedom (1-DOF) during folding.
 
 ---
-
 ### 2.2 Mathematical Folding Kinematics
 
 **Definitions**
-- \(\theta\): fold angle of the primary creases ( \(0^\circ\) = flat, \(\pm 180^\circ\) = fully folded)
-- \(\psi\): fold angle of the secondary creases
-- \(\phi\): acute angle of the base parallelogram (constant)
+- theta: fold angle of the primary creases 
+- psi: fold angle of the secondary creases
+- phi acute angle of the base parallelogram (constant)
 
 **Key rigid-foldability constraint**
-
-
 This relation comes from spherical trigonometry applied to the four-crease vertex, ensuring the pattern rigid-folds with panels treated as rigid facets connected by ideal hinges.
-
 
 ### 4. Engineering Advantages
 - **Compact stowage:** high area-to-volume compression
 - **Single actuation:** 1-DOF deployment of the entire sheet
 - **Even stress distribution:** suitable for thin, fragile substrates
 - **Predictable deployment path:** reduced risk of buckling or inversion with pre-creased hinges
-sin(θ/2)
+sin(θ/2)/
 sin(ψ/2)
 ​
  =cos(ϕ)
