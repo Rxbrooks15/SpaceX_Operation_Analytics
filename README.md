@@ -17,8 +17,7 @@ Proposed Satellite Design
 
 <img width="1150" height="807" alt="Screenshot (462)" src="https://github.com/user-attachments/assets/2eaa8ddc-0d04-490b-aa27-ae1332eb9eb4" />
 
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+
 
 ## Miura-ori: Technical Details
 
@@ -40,34 +39,9 @@ They alternate in a zig-zag arrangement so that actuating one crease drives the 
 
 **Key rigid-foldability constraint**
 
-\[
-\frac{\sin\left(\psi/2\right)}{\sin\left(\theta/2\right)} \;=\; \cos\phi
-\]
 
 This relation comes from spherical trigonometry applied to the four-crease vertex, ensuring the pattern rigid-folds with panels treated as rigid facets connected by ideal hinges.
 
----
-
-### 3. Compression Ratio
-
-For a sheet composed of \(m \times n\) identical parallelogram units with side lengths \(a\) (along \(x\)) and \(b\) (along \(y\)):
-
-**Original (flat) projected dimensions**
-\[
-L_0 = m\,a, \qquad
-W_0 = n\,b\,\sin\phi
-\]
-
-**Folded projected dimensions (at fold state \(\theta\))**
-\[
-L(\theta) = m\,a\,\cos\!\left(\tfrac{\theta}{2}\right),
-\qquad
-W(\theta) = n\,b\,\sin\phi \,\cos\!\left(\tfrac{\psi}{2}\right)
-\]
-
-Because \(\psi\) is kinematically linked to \(\theta\) via the rigid-foldability constraint, **both** \(L\) and \(W\) contract simultaneously—a distinctive property of Miura-ori.
-
----
 
 ### 4. Engineering Advantages
 - **Compact stowage:** high area-to-volume compression
