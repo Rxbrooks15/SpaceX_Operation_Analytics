@@ -16,7 +16,7 @@ https://github.com/user-attachments/assets/69c63660-09b8-43a0-a83e-c40d78bc732f
 
 
 Proposed Satellite Design (Unfinished)
-Purely hypothetical 
+Purely a hypothetical thought experiment  
 
 ![Starlink (1)](https://github.com/user-attachments/assets/fcd5c0c2-fb10-493c-b439-e2abb70f4bab)
 
