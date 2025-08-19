@@ -1,5 +1,5 @@
 # SpaceX_Operation_Analytics
-Developed an interactive visual documenting starlink and falcon 9 statistics from 2010 to 2022
+Developed an interactive visual documenting starlink and falcon 9 statistics from 2010 to 2022...
 Click Me!!! https://spacex-operation-analytics.onrender.com/
 <img width="1892" height="951" alt="Screenshot (448)" src="https://github.com/user-attachments/assets/8d93b306-2aaf-46e7-9090-a0c598675707" />
 
